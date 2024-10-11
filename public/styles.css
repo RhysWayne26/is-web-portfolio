@@ -1,21 +1,21 @@
 body{
     margin: 0;
-    background-color: #00c5c5;
+    background-color: lightsteelblue;
     color: #032567;
     font-family: Helvetica, Tahoma, sans-serif;
     align-items: center;
     padding: 100px;
 }
 
-.intro-line{
+.intro__line{
     color: #00267e;
-    margin: 60px auto;
-    padding: 60px;
+    margin: 20px auto;
+    padding: 40px;
     text-align: center;
     text-shadow: black 1px 1px;
 }
 
-.profile-photo{
+.profile__photo{
     width: 200px;
     height: auto;
     border-radius: 4px;
@@ -23,26 +23,20 @@ body{
     margin-bottom: 20px;
 }
 
-.nav-container{
+.nav__menu{
     display: block;
     align-items: center;
-    padding: 20px;
-    background-color: cyan;
-    border-radius: 5px;
+    margin: 0;
     transition: border-color 0.3s ease-in-out;
     unicode-bidi: isolate;
+    justify-content: space-around;
+    height: 154px;
 }
 
-.nav-menu{
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-menu li{
+.nav__item{
     margin-right: 20px;
     padding: 10px 5px;
-    border: blueviolet solid;
+    border: #9c0000 inset 1px;
     border-radius: 5px;
     background: transparent;
     text-align: center;
@@ -54,18 +48,14 @@ body{
 }
 
 
-.nav-menu li:hover{
+.nav__item:hover{
     background: red;
     transform: scale(1.1);
     z-index: 1;
     box-shadow: 0 0 10px 4px darkred;
 }
 
-.nav-menu li:last-child{
-    margin-right: 0;
-}
-
-.nav-menu li a{
+.nav__item a{
     font-size: 15px;
     text-decoration: none;
     color: #032567;
@@ -75,6 +65,62 @@ body{
 }
 
 
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    height: auto;
+    width: 100px;
+    margin: 20px;
+}
+
+.skills__item:nth-child(odd) {
+    transform: translate3d(30px, 30px, 0);
+}
+
+
 p{
+    font-size: 14px;
     line-height: 1.5;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 68, 156, 0.4);
+    padding: 10px;
+    height: auto;
+    border: #9c0000 outset 1px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.ascii-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.symbol{
+    height: auto;
+    width: 50px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
 }

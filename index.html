@@ -10,109 +10,103 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="intro-line">Привет, меня зовут Георгий</h1>
-    <img src="public/harry.jpg" alt="Моё фото" class="profile-photo">
-    <div class="nav-container">
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#skills">Навыки</a></li>
-          <li><a href="#work">Работа</a></li>
-          <li><a href="#soul">Душа</a></li>
-          <li><a href="#future">Планы на будущее</a></li>
-          <li><a href="#gallery">Галерея</a></li>
-        </ul>
-      </nav>
-    </div>
-    <p>Я - студент 3<sup>го</sup> курса ИСа в ИТМО, безработный и несчастный энтузиаст С# и Asp.Net, в данный момент дислоцируюсь в Спб
-    </p>
-  </header>
-  <main>
-    <section class="section" id="skills">
-      <h3>
-        Навыки
-      </h3>
-      <ul>
-        <li>.Net 8</li>
-        <li>Asp.Net Core 6</li>
-        <li>Java 21</li>
-        <li>Spring Boot 3</li>
-        <li>HTML 5</li>
-        <li>CSS 3</li>
-        <li>PostgreSQL</li>
-        <li>MongoDB</li>
-        <li>Microsoft SQL Server 2019</li>
-      </ul>
-      <p>
-        Готовь в кратчайшие сроки адаптироваться под <b>любой</b> стек
-      </p>
-    </section>
-    <section class="section" id="work">
-      <h3>
-        Работа
-      </h3>
-      <p>
-        В данный момент в рамках учебного проекта работаю в команде из 3<sup>х</sup> человек над созданием языка программирования scum. Язык будет поддерживать объектно-ориентированную парадигму, иметь сильную статическую типизацию, работать в связке с интерпретатором в виртуальной машине JVM. В команде я занимаюсь созданием интерпретатора. Опыта коммерческой разработки в данный момент не имею.
-      </p>
-      <div class="content">
-        <h4>3 последних проекта</h4>
-        <ol>
-          <li>
-            <h5>CatApp с реализованным REST Api</h5>
-            <p>В рамках проекта была реализована монолитная система введения информации о котах, их друзьях и хозяевах, реализованная в рамках учебного проекта. Реализованы методы аутентификации и авторизации с помощью фреймворка Spring Security.</p>
-            <a href="https://github.com/l1monc3llo/ProgrammingTechnologiesLabs/tree/main/lab4" target="_blank" rel="noopener noreferrer">DeadInsideCat</a>
-          </li>
-          <li>
-            <h5>Решатель Кубика Рубика</h5>
-            <p>Функциональность реализована на С++</p>
-            <a href="https://github.com/l1monc3llo/CubeRubik" target="_blank" rel="noopener noreferrer">CubeRubikSolver</a>
-          </li>
-          <li>
-            <h5>BankApp на .Net</h5>
-            <p>В рамках проекта реализованы основные функциональные возможности банкомата: списывание и добавление денег на счёт, перевод на счёт некоторого абонента, существующего в базе. Бэкенд приложения основан на стандартах чистой, луковой архитектуры</p>
-            <a href="https://github.com/l1monc3llo/OOPLabs/tree/main/Lab5" target="_blank" rel="noopener noreferrer">CubeRubikSolver</a>
-          </li>
-        </ol>
-      </div>
-      <div class="content">
-        <p>Другие проекты доступны по ссылкам</p>
-        <ul>
-          <li><a href="https://github.com/l1monc3llo" target="_blank" rel="noopener noreferrer">Мой GitHub</a></li>
-          <li><a href="https://github.com/RhysWayne26" target="_blank" rel="noopener noreferrer">Мой 2й GitHub</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="section" id="soul">
-      <h3>
-        Душа
-      </h3>
-      <p>
-        Заядлый игроман, 13 лет опыта, в последние 2 года заметно дистанцировался таково время препровождения на постоянной основе; любимый жанр - RPG, тру фанат Киберпанка.
-        Топ фильм - Бесславные ублюдки
-      </p>
-      <div class="content">
-        <ul>
-          <li><a href="https://steamcommunity.com/profiles/76561198191683803/" target="_blank" rel="noopener noreferrer">Мой Steam</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="section" id="future">
-      <h3>
-        Планы на будущее
-      </h3>
-      <p>Не скажу</p>
-    </section>
-    <section class="section" id="gallery">
-      <h3>
-        Галерея
-      </h3>
-      <p>
-        Не сегодня
-      </p>
-    </section>
-    <aside class="ascii-art">
-      <pre>
+<header>
+  <nav>
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="#skills">Skills</a></li>
+      <li class="nav__item"><a href="#work">Work</a></li>
+      <li class="nav__item"><a href="#soul">Soul</a></li>
+    </ul>
+  </nav>
+  <h1 class="intro__line">Привет, меня зовут Георгий</h1>
+  <img src="public/harry.jpg" alt="Моё фото" class="profile__photo">
+  <p>Я - студент 3<sup>го</sup> курса ИСа в ИТМО, безработный и несчастный энтузиаст С# и Asp.Net, в данный момент дислоцируюсь в Спб.</p>
+</header>
 
+<main>
+  <section class="section" id="skills">
+    <h3 class="section__title">Навыки</h3>
+    <ul class="skills__list">
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".Net 8">
+        .Net 8
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java 21">
+        Java 21
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot 3">
+        Spring Boot 3
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML 5">
+        HTML 5
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS 3">
+        CSS 3
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+        PostgreSQL
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        MongoDB
+      </li>
+      <li class="skills__item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="Microsoft SQL Server 2019">
+        Microsoft SQL Server 2019
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="section" id="work">
+    <h3 class="section__title">Работа</h3>
+    <p class="work__description">В данный момент в рамках учебного проекта работаю в команде из 3<sup>х</sup> человек над созданием языка программирования scum. Язык будет поддерживать объектно-ориентированную парадигму, иметь сильную статическую типизацию, работать в связке с интерпретатором в виртуальной машине JVM. В команде я занимаюсь созданием интерпретатора. Опыта коммерческой разработки в данный момент не имею.</p>
+    <div class="projects">
+      <h4 class="projects__title">3 последних проекта</h4>
+      <ol class="projects__list">
+        <li class="projects__item">
+          <h5 class="project__title">CatApp с реализованным REST Api</h5>
+          <p class="project__description">В рамках проекта была реализована монолитная система введения информации о котах, их друзьях и хозяевах, реализованная в рамках учебного проекта. Реализованы методы аутентификации и авторизации с помощью фреймворка Spring Security.</p>
+          <a class="project__link" href="https://github.com/l1monc3llo/ProgrammingTechnologiesLabs/tree/main/lab4" target="_blank" rel="noopener noreferrer">DeadInsideCat</a>
+        </li>
+        <li class="projects__item">
+          <h5 class="project__title">Солвер Кубика Рубика</h5>
+          <p class="project__description">Функциональность реализована на С++.</p>
+          <a class="project__link" href="https://github.com/l1monc3llo/CubeRubik" target="_blank" rel="noopener noreferrer">CubeRubikSolver</a>
+        </li>
+        <li class="projects__item">
+          <h5 class="project__title">BankApp на .Net</h5>
+          <p class="project__description">В рамках проекта реализованы основные функциональные возможности банкомата: списывание и добавление денег на счёт, перевод на счёт некоторого абонента, существующего в базе. Бэкенд приложения основан на стандартах чистой, луковой архитектуры.</p>
+          <a class="project__link" href="https://github.com/l1monc3llo/OOPLabs/tree/main/Lab5" target="_blank" rel="noopener noreferrer">BankApp</a>
+        </li>
+      </ol>
+    </div>
+    <div class="projects">
+      <p>Другие проекты доступны по ссылкам:</p>
+      <ul class="projects__links">
+        <li><a href="https://github.com/l1monc3llo" target="_blank" rel="noopener noreferrer">Мой GitHub</a></li>
+        <li><a href="https://github.com/RhysWayne26" target="_blank" rel="noopener noreferrer">Мой 2й GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="soul">
+    <h3 class="section__title">Душа</h3>
+    <p class="soul__description">Заядлый игроман, 13 лет опыта, в последние 2 года заметно дистанцировался таково время препровождения на постоянной основе; любимый жанр - RPG, тру фанат Киберпанка. Топ фильм - Бесславные ублюдки.</p>
+    <div class="content">
+      <ul class="soul__links">
+        <li><a href="https://steamcommunity.com/profiles/76561198191683803/" target="_blank" rel="noopener noreferrer">Мой Steam</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <aside class="ascii-art">
+            <pre>
       ⢀⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
       ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
       ⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀
@@ -130,17 +124,12 @@
       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 
       </pre>
-    </aside>
-    <article>
-      <h4>Мудрость мастера Угвея</h4>
-      <blockquote>
-        <em>Всегда пишите код так, будто сопровождать его будет склонный к насилию <b>психопат</b>, который знает, где вы живете.</em>
-      </blockquote>
-    </article>
-  </main>
-  <footer>
-    По любым вопросам, пишите в <a href="https://t.me/nghtywlf" target="_blank" rel="noopener noreferrer">nghtywlf</a>
-  </footer>
-</body>
+  </aside>
+</main>
 
+<footer>
+  <p>По любым вопросам, пишите<p>
+  <a href="https://t.me/nghtywlf" target="_blank" rel="noopener noreferrer"><img src="public/telegram-icon.svg" class="symbol" alt="telegram__icon"></a>
+</footer>
+</body>
 </html>
