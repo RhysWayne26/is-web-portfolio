@@ -1,9 +1,8 @@
 body{
     margin: 0;
-    background-color: darkgray;
+    background-color: lightblue;
     color: #032567;
     font-family: Helvetica, Tahoma, sans-serif;
-    align-items: center;
     padding: 100px;
 }
 
@@ -29,11 +28,8 @@ header{
 
 .nav__menu{
     display: block;
-    align-items: center;
     margin: 0;
     transition: border-color 0.3s ease-in-out;
-    unicode-bidi: isolate;
-    justify-content: space-around;
     height: 154px;
 }
 
@@ -48,14 +44,12 @@ header{
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
-    position: relative;
 }
 
 
 .nav__item:hover{
     background: red;
     transform: scale(1.1);
-    z-index: 1;
     box-shadow: 0 0 10px 4px darkred;
 }
 
@@ -111,7 +105,6 @@ p{
 .ascii-art{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 140px;
     padding: 10px;
 }
@@ -122,10 +115,7 @@ p{
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: center;
     padding: 20px;
     height: auto;
 }
