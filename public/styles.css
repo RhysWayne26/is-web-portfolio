@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    background-color: lightblue;
+    background-color: darkgray;
     color: #032567;
     font-family: Helvetica, Tahoma, sans-serif;
+    align-items: center;
     padding: 100px;
 }
 
@@ -27,8 +28,12 @@ header{
 }
 
 .nav__menu{
+    display: block;
+    align-items: center;
     margin: 0;
     transition: border-color 0.3s ease-in-out;
+    unicode-bidi: isolate;
+    justify-content: space-around;
     height: 154px;
 }
 
@@ -38,9 +43,12 @@ header{
     border: #9c0000 inset 2px;
     border-radius: 5px;
     background: transparent;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+    position: relative;
 }
 
 
@@ -68,6 +76,10 @@ header{
 }
 
 .skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 40px;
     height: auto;
     width: 100px;
@@ -99,12 +111,13 @@ p{
 .ascii-art{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 140px;
     padding: 10px;
 }
 
 .symbol{
-    height: 50px;
+    height: auto;
     width: 50px;
 }
 
@@ -112,5 +125,7 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     padding: 20px;
+    height: auto;
 }
