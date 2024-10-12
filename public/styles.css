@@ -112,6 +112,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 140px;
     padding: 10px;
 }
 
