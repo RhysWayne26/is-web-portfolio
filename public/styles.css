@@ -22,8 +22,8 @@ header{
     width: 200px;
     height: auto;
     border-radius: 4px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .nav__menu{
@@ -46,8 +46,9 @@ header{
     left: 30px;
     right: 10px;
     bottom: -10px;
-    background: rgba(0, 40, 90, 0.6);
+    background: rgba(32, 107, 156, 0.6);
     z-index: -1;
+    border: darkred 1px solid;
     border-radius: 10px;
 }
 
@@ -55,6 +56,13 @@ header{
     .nav__menu {
         justify-content: center;
         position: initial;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu::before {
+        display: none;
     }
 }
 
@@ -108,7 +116,10 @@ header{
 
 @media screen and (max-width: 768px) {
     .skills__list {
-        grid-template-columns: 1fr
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -123,11 +134,11 @@ header{
 }
 
 .skills__item:nth-child(odd) {
-    transform: translate3d(30px, 30px, 0);
+    transform: translate3d(0, 30px, 0);
 }
 
 .skills__item:nth-child(even) {
-    transform: translate3d(-30px, -30px, 0);
+    transform: translate3d(0, -30px, 0);
 }
 
 @media screen and (max-width: 768px){
@@ -138,6 +149,32 @@ header{
     .skills__item:nth-child(even) {
         transform: translate3d(0px, 0px, 0);
     }
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 68, 156, 0.1);
+    border: 1px solid #9c0000;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.projects__item::-webkit-scrollbar {
+    display: none;
 }
 
 
