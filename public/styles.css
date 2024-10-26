@@ -7,19 +7,36 @@ body{
 }
 
 header{
-    margin-bottom : 120px;
+    position: absolute;
 }
 
 .intro__line{
     color: #00267e;
-    margin: 200px auto;
-    padding: 40px;
-    text-align: center;
     text-shadow: black 1px 1px;
 }
 
+.photo__with__navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 80px 0;
+    gap: 70px;
+
+}
+
+.photo__with__description{
+    width: 550px;
+}
+
+.navigation__container{
+    width: 400px;
+    height: 400px;
+}
+
 .profile__photo{
-    width: 200px;
+    width: 550px;
     height: auto;
     border-radius: 4px;
     margin-top: 40px;
@@ -28,28 +45,10 @@ header{
 
 .nav__menu{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 70px;
-    margin-bottom: 250px;
+    flex-direction: column;
     transition: border-color 0.3s ease-in-out;
     height: 30px;
-    z-index: 1000;
-}
-
-.nav__menu::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    left: 30px;
-    right: 10px;
-    bottom: -10px;
-    background: rgba(32, 107, 156, 0.6);
-    z-index: -1;
-    border: darkred 1px solid;
-    border-radius: 10px;
+    gap: 10px
 }
 
 @media screen and (max-width: 768px) {
@@ -67,13 +66,14 @@ header{
 }
 
 .nav__item{
+    display: inline-block;
     margin-right: 20px;
     padding: 10px 5px;
+    text-align: center;
     border: #9c0000 inset 2px;
     border-radius: 5px;
     background: transparent;
     text-decoration: none;
-    display: inline-block;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
 }

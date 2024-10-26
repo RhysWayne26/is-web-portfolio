@@ -11,19 +11,24 @@
 
 <body>
 <header>
-  <nav>
-    <ul class="nav__menu">
-      <li class="nav__item"><a href="#skills">Skills</a></li>
-      <li class="nav__item"><a href="#work">Work</a></li>
-      <li class="nav__item"><a href="#soul">Soul</a></li>
-    </ul>
-  </nav>
   <h1 class="intro__line">Привет, меня зовут Георгий</h1>
-  <img src="public/harry.jpg" alt="Моё фото" class="profile__photo">
-  <p>Я - студент 3<sup>го</sup> курса ИСа в ИТМО, безработный и несчастный энтузиаст С# и Asp.Net, в данный момент дислоцируюсь в Спб.</p>
 </header>
-
 <main>
+  <div class = "photo__with__navigation">
+    <div class = "photo__with__description">
+      <img src="public/harry.jpg" alt="Моё фото" class="profile__photo">
+      <p>Я - студент 3<sup>го</sup> курса ИСа в ИТМО, безработный и несчастный энтузиаст С# и Asp.Net, в данный момент дислоцируюсь в Спб.</p>
+    </div>
+    <div class = "navigation__container">
+      <nav>
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#work">Work</a></li>
+          <li class="nav__item"><a href="#hobbies">Hobbies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <section class="section" id="skills">
     <h3 class="section__title">Навыки</h3>
     <div class="skills__list">
@@ -95,11 +100,11 @@
     </div>
   </section>
 
-  <section class="section" id="soul">
-    <h3 class="section__title">Душа</h3>
-    <p class="soul__description">Заядлый игроман, 13 лет опыта, в последние 2 года заметно дистанцировался таково время препровождения на постоянной основе; любимый жанр - RPG, тру фанат Киберпанка. Топ фильм - Бесславные ублюдки.</p>
+  <section class="section" id="hobbies">
+    <h3 class="section__title">Интересы</h3>
+    <p class="hobbies__description">Заядлый игроман, 13 лет опыта, в последние 2 года заметно дистанцировался таково время препровождения на постоянной основе; любимый жанр - RPG, тру фанат Киберпанка. Топ фильм - Бесславные ублюдки.</p>
     <div class="content">
-      <ul class="soul__links">
+      <ul class="hobbies__links">
         <li><a href="https://steamcommunity.com/profiles/76561198191683803/" target="_blank" rel="noopener noreferrer">Мой Steam</a></li>
       </ul>
     </div>
