@@ -1,23 +1,31 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="портфолио, разработчик, навыки, контакты, бэкенд, .Net, Postgres, MongoDB, Asp.Net, GitHub, веб-разработка">
   <meta name="description" content="Сайт-портфолио веб-разработчика на дотнете в активном поиске работы">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="public/styles.css">
+  <script src="src/main.js" defer></script>
   <title>GMax</title>
 </head>
 
 <body>
 <header>
-  <h1 class="intro__line">Привет, меня зовут Георгий</h1>
+  <div class="intro">
+    <h3 class="intro__line">George Maximov</h3>
+    <nav class="intro__pages__nav__menu">
+      <a href="index.html" class="intro__pages__nav__item">Main</a>
+      <a href="feedback.html" class="intro__pages__nav__item">Feedback</a>
+      <a href="daily.html" class="intro__pages__nav__item">Daily</a>
+    </nav>
+  </div>
 </header>
 <main>
   <div class = "photo__with__navigation">
     <div class = "photo__with__description">
-      <img src="public/harry.jpg" alt="Моё фото" class="profile__photo">
-      <p>Я - студент 3<sup>го</sup> курса ИСа в ИТМО, безработный и несчастный энтузиаст С# и Asp.Net, в данный момент дислоцируюсь в Спб.</p>
+      <img src="public/me.jpg" alt="Моё фото" class="profile__photo">
+      <p>I am a 3<sup>rd</sup> year IS student at ITMO, an unemployed and unhappy C# and Asp.Net enthusiast.</p>
     </div>
     <div class = "navigation__container">
       <nav>
@@ -30,7 +38,7 @@
     </div>
   </div>
   <section class="section" id="skills">
-    <h3 class="section__title">Навыки</h3>
+    <h3 class="section__title">Skills</h3>
     <div class="skills__list">
       <div class="skills__item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".Net 8">
@@ -69,43 +77,43 @@
 
 
   <section class="section" id="work">
-    <h3 class="section__title">Работа</h3>
-    <p class="work__description">В данный момент в рамках учебного проекта работаю в команде из 3<sup>х</sup> человек над созданием языка программирования scum. Язык будет поддерживать объектно-ориентированную парадигму, иметь сильную статическую типизацию, работать в связке с интерпретатором в виртуальной машине JVM. В команде я занимаюсь созданием интерпретатора. Опыта коммерческой разработки в данный момент не имею.</p>
+    <h3 class="section__title">Work</h3>
+    <p class="work__description">At the moment I am working in a team of 3 people on the development of a scum programming language as part of a study project. The language will support object-oriented paradigm, have strong static typing, work in conjunction with interpreter in JVM virtual machine. I am on the team building the interpreter. I have no experience in commercial development at the moment.</p>
     <div class="projects">
-      <h4 class="projects__title">3 последних проекта</h4>
+      <h4 class="projects__title">Last 3 projects</h4>
       <ul class="projects__list">
         <li class="projects__item">
-          <h5 class="project__title">CatApp с реализованным REST API</h5>
-          <p class="project__description">В рамках проекта была реализована монолитная система введения информации о котах, их друзьях и хозяевах, реализованная в рамках учебного проекта. Реализованы методы аутентификации и авторизации с помощью фреймворка Spring Security.</p>
+          <h5 class="project__title">CatApp with implemented REST API</h5>
+          <p class="project__description">A monolithic system for entering information about cats, their friends and owners was implemented as part of a training project. Authentication and authorization methods using Spring Security framework were implemented.</p>
           <a class="project__link" href="https://github.com/l1monc3llo/ProgrammingTechnologiesLabs/tree/main/lab4" target="_blank" rel="noopener noreferrer">DeadInsideCat</a>
         </li>
         <li class="projects__item">
-          <h5 class="project__title">Солвер Кубика Рубика</h5>
-          <p class="project__description">Функциональность реализована на С++.</p>
+          <h5 class="project__title">Rubik Cube Solver</h5>
+          <p class="project__description">The functionality is implemented in C++</p>
           <a class="project__link" href="https://github.com/l1monc3llo/CubeRubik" target="_blank" rel="noopener noreferrer">CubeRubikSolver</a>
         </li>
         <li class="projects__item">
-          <h5 class="project__title">BankApp на .Net</h5>
-          <p class="project__description">В рамках проекта реализованы основные функциональные возможности банкомата: списывание и добавление денег на счёт, перевод на счёт некоторого абонента, существующего в базе. Бэкенд приложения основан на стандартах чистой, луковой архитектуры.</p>
+          <h5 class="project__title">BankApp in .Net</h5>
+          <p class="project__description">The project implements the basic functionality of the ATM: debiting and adding money to the account, transfer to the account of some subscriber existing in the base. The application backend is based on pure onion architecture standards.</p>
           <a class="project__link" href="https://github.com/l1monc3llo/OOPLabs/tree/main/Lab5" target="_blank" rel="noopener noreferrer">BankApp</a>
         </li>
       </ul>
     </div>
     <div class="projects">
-      <p>Другие проекты доступны по ссылкам:</p>
+      <p>Other projects are available at the links:</p>
       <ul class="projects__links">
-        <li><a href="https://github.com/l1monc3llo" target="_blank" rel="noopener noreferrer">Мой GitHub</a></li>
-        <li><a href="https://github.com/RhysWayne26" target="_blank" rel="noopener noreferrer">Мой 2й GitHub</a></li>
+        <li><a href="https://github.com/l1monc3llo" target="_blank" rel="noopener noreferrer">My 1<sup>st</sup> GitHub</a></li>
+        <li><a href="https://github.com/RhysWayne26" target="_blank" rel="noopener noreferrer">Мy 2<sup>nd</sup> GitHub</a></li>
       </ul>
     </div>
   </section>
 
   <section class="section" id="hobbies">
-    <h3 class="section__title">Интересы</h3>
-    <p class="hobbies__description">Заядлый игроман, 13 лет опыта, в последние 2 года заметно дистанцировался таково время препровождения на постоянной основе; любимый жанр - RPG, тру фанат Киберпанка. Топ фильм - Бесславные ублюдки.</p>
+    <h3 class="section__title">Hobbies</h3>
+    <p class="hobbies__description">Avid gamer and chess player, 13 years of experience, in the last 2 years noticeably distanced such pastime on a regular basis; favorite genre - RPG, tru fan of Cyberpunk. Top movie - Inglourious Basterds.</p>
     <div class="content">
       <ul class="hobbies__links">
-        <li><a href="https://steamcommunity.com/profiles/76561198191683803/" target="_blank" rel="noopener noreferrer">Мой Steam</a></li>
+        <li><a href="https://steamcommunity.com/profiles/76561198191683803/" target="_blank" rel="noopener noreferrer">My Steam</a></li>
       </ul>
     </div>
   </section>
@@ -133,7 +141,7 @@
 </main>
 
 <footer>
-  <p>По любым вопросам, пишите<p>
+  <p>All rights are not reserved<p>
   <a href="https://t.me/nghtywlf" target="_blank" rel="noopener noreferrer"><img src="public/telegram-icon.svg" class="symbol" alt="telegram__icon"></a>
 </footer>
 </body>
