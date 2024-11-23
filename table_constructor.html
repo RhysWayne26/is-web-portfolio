@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Daily</title>
+  <title>Table Constructor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="public/table_constructor_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="src/main.js" defer></script>
+  <script src="src/table_constructor_script.js" defer></script>
 </head>
 <body>
+<main>
   <header>
     <div class="intro">
       <h3 class="intro__line">George Maximov</h3>
@@ -19,9 +23,26 @@
       </nav>
     </div>
   </header>
-  <div class="daily__info">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex laboriosam neque, odit quae reiciendis rem. Amet architecto, aut doloremque eaque eum iusto natus officia optio provident, quisquam saepe tempore, tenetur!</p>
+  <div class="task-manager">
+    <div class="task-manager__input">
+      <label for="task-name"></label>
+      <input type="text" id="task-name" placeholder="Add your task" required>
+      <button id="add-task-btn" aria-label="Add Task">
+        <i class="fas fa-check"></i>
+      </button>
+    </div>
+    <table class="task-manager__table">
+      <thead>
+      <tr>
+        <th>Task</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody id="task-list">
+      </tbody>
+    </table>
   </div>
+</main>
 <footer>
   <p>All rights are not reserved<p>
   <a href="https://t.me/nghtywlf" target="_blank" rel="noopener noreferrer"><img src="public/telegram-icon.svg" class="symbol" alt="telegram__icon"></a>
