@@ -1,18 +1,5 @@
-document.getElementById("task-name").addEventListener("focus", function () {
-  if (this.placeholder === "Add your task") {
-    this.placeholder = '';
-  }
-});
-
-document.getElementById("task-name").addEventListener("blur", function () {
-  if (this.value.trim() === '') {
-    this.placeholder = "Add your task";
-  }
-});
-
 document.getElementById("task-name").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    event.preventDefault();
     addTask();
   }
 });
@@ -32,12 +19,21 @@ function addTask() {
   const taskList = document.getElementById("task-list");
   const newRow = document.createElement("tr");
 
-  newRow.innerHTML = `
-    <td>${taskName}</td>
-    <td><button class="delete-task-btn"><i class="fas fa-times"></i></button></td>
-  `;
+  const taskNameCell = document.createElement("td");
+  taskNameCell.textContent = taskName;
+  newRow.appendChild(taskNameCell);
 
-  newRow.querySelector(".delete-task-btn").addEventListener("click", function () {
+  const deleteCell = document.createElement("td");
+  const deleteButton = document.createElement("button");
+  deleteButton.classList.add("delete-task-btn");
+  const icon = document.createElement("i");
+  icon.classList.add("fas", "fa-times");
+  deleteButton.appendChild(icon);
+
+  deleteCell.appendChild(deleteButton);
+  newRow.appendChild(deleteCell);
+
+  deleteButton.addEventListener("click", function () {
     newRow.remove();
     saveTasks();
   });
@@ -48,6 +44,7 @@ function addTask() {
 
   saveTasks();
 }
+
 
 function saveTasks() {
   const taskList = [];
