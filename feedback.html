@@ -5,7 +5,9 @@
   <title>Feedback</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="public/comment_styles.css">
   <script src="src/main.js" defer></script>
+  <script src="src/feedback.js" defer></script>
 </head>
 <body>
   <header>
@@ -21,7 +23,7 @@
   </header>
   <div class="feedback__form">
     <h2>Feedback</h2>
-    <form action="/submit_feedback" method="post">
+    <form action="/submit_feedback" method="post" id="feedbackForm">
       <label for="name">Name:</label>
       <input type="text" id="name" required>
       <label for="email">Email:</label>
@@ -31,6 +33,12 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+
+  <div class="comment_section" id="commentSection"></div>
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+
   <footer>
     <p>All rights are not reserved<p>
     <a href="https://t.me/nghtywlf" target="_blank" rel="noopener noreferrer"><img src="public/telegram-icon.svg" class="symbol" alt="telegram__icon"></a>
